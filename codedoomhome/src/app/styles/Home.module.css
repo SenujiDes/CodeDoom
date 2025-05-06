@@ -1,0 +1,427 @@
+/* styles/Home.module.css */
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+  }
+  
+  .desktopNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .desktopNav li {
+    margin: 0 15px;
+  }
+  
+  .desktopNav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .desktopNav a:hover,
+  .desktopNav a.active {
+    color: #666;
+  }
+  
+  .dropdown span {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+  
+  .searchIcon {
+    cursor: pointer;
+  }
+  
+  .mobileMenuButton {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .mobileMenuButton div {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+  }
+  
+  .mobileNav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mobileNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mobileNav li {
+    margin: 15px 0;
+  }
+  
+  .mobileNav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .main {
+    position: relative;
+  }
+  
+  .heroSection {
+    display: flex;
+    margin: 0 50px;
+    position: relative;
+    min-height: 650px;
+  }
+  
+  .heroContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .heroText {
+    position: relative;
+    padding-top: 50px;
+  }
+  
+  .heroText h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    line-height: 0.9;
+  }
+  
+  .heroTop, .heroMiddle, .heroBottom {
+    display: block;
+    font-size: 120px;
+  }
+  
+  .heroBottom {
+    display: flex;
+    align-items: center;
+  }
+  
+  .webDesignBox {
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    margin-right: 20px;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    border-bottom: 5px solid #e5ff1a;
+  }
+  
+  .andText {
+    font-size: 120px;
+  }
+  
+  .developmentCircle {
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+    z-index: 5;
+  }
+  
+  .circleWrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #e5ff1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circleText {
+    transform: rotate(-90deg);
+    font-weight: 700;
+    text-transform: lowercase;
+    font-size: 24px;
+  }
+  
+  .scrollDown {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .agencyDescription {
+    max-width: 500px;
+    margin-top: auto;
+    padding-bottom: 50px;
+  }
+  
+  .agencyDescription p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .heroImages {
+    flex: 1;
+    position: relative;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .redOverlay {
+    position: absolute;
+    bottom: 50px;
+    right: 300px;
+    width: 200px;
+    height: 300px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  
+  .centerCircle {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    border: 5px solid white;
+  }
+  
+  .rightImage {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 350px;
+    height: 450px;
+    border-radius: 180px 180px 0 0;
+    overflow: hidden;
+  }
+  
+  .watchButton {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .playIcon {
+    margin-bottom: 5px;
+  }
+  
+  .watchButton span {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .buildingSection {
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    text-align: right;
+  }
+  
+  .buildingText h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 1200px) {
+    .heroTop, .heroMiddle, .heroBottom {
+      font-size: 90px;
+    }
+    
+    .andText {
+      font-size: 90px;
+    }
+    
+    .webDesignBox {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .heroSection {
+      flex-direction: column;
+    }
+    
+    .heroImages {
+      margin-top: 150px;
+      height: 500px;
+    }
+    
+    .buildingSection {
+      position: relative;
+      top: auto;
+      right: auto;
+      text-align: left;
+      margin: 50px 0 0 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 20px;
+    }
+    
+    .desktopNav {
+      display: none;
+    }
+    
+    .mobileMenuButton {
+      display: flex;
+    }
+    
+    .mobileNav {
+      display: block;
+    }
+    
+    .heroSection {
+      margin: 0 20px;
+    }
+    
+    .heroTop, .heroMiddle, .heroBottom {
+      font-size: 60px;
+    }
+    
+    .andText {
+      font-size: 60px;
+    }
+    
+    .webDesignBox {
+      font-size: 20px;
+    }
+    
+    .redOverlay {
+      right: 200px;
+      width: 150px;
+      height: 250px;
+    }
+    
+    .centerCircle {
+      right: 150px;
+      width: 120px;
+      height: 120px;
+    }
+    
+    .rightImage {
+      width: 250px;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .heroTop, .heroMiddle, .heroBottom {
+      font-size: 40px;
+    }
+    
+    .andText {
+      font-size: 40px;
+    }
+    
+    .webDesignBox {
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    
+    .developmentCircle {
+      right: 50px;
+      bottom: -30px;
+    }
+    
+    .circleWrapper {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .circleText {
+      font-size: 16px;
+    }
+    
+    .redOverlay {
+      right: 150px;
+      width: 100px;
+      height: 200px;
+    }
+    
+    .centerCircle {
+      right: 100px;
+      width: 80px;
+      height: 80px;
+    }
+    
+    .rightImage {
+      width: 200px;
+      height: 280px;
+    }
+    
+    .watchButton {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .agencyDescription p {
+      font-size: 16px;
+    }
+  }
