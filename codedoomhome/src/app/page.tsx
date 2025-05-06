@@ -11,15 +11,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Arolax Digital Agency</title>
-        <meta name="description" content="Full-service digital agency" />
+        <title>CodeDoom</title>
+        <meta name="description" content="CodeDoom" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Image src="/logo.png" alt="Arolax Logo" width={150} height={50} />
+          <Image src="/logo.png" alt="CodeDoom" width={130} height={30} />
         </div>
         
         <nav className={styles.desktopNav}>
@@ -92,12 +91,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className={styles.scrollDown}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <polyline points="19 12 12 19 5 12"></polyline>
-              </svg>
-            </div>
+            
             
             <div className={styles.agencyDescription}>
               <p>
@@ -109,13 +103,13 @@ export default function Home() {
           <div className={styles.heroImages}>
             <div className={styles.imageContainer}>
               <div className={styles.redOverlay}>
-                <Image src="/person1.jpg" alt="Team member" layout="fill" objectFit="cover" />
+                <Image src="/images/person1.jpg" alt="Team member" layout="fill" objectFit="cover" />
               </div>
               <div className={styles.centerCircle}>
-                <Image src="/person2.jpg" alt="Team member" layout="fill" objectFit="cover" />
+                <Image src="/images/person2.jpg" alt="Team member" layout="fill" objectFit="cover" />
               </div>
               <div className={styles.rightImage}>
-                <Image src="/person3.jpg" alt="Team members collaborating" layout="fill" objectFit="cover" />
+                <Image src="/images/person3.jpg" alt="Team members collaborating" layout="fill" objectFit="cover" />
               </div>
             </div>
             

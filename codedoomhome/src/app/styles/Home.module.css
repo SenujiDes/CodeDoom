@@ -3,6 +3,8 @@
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #000c19;
   }
   
   .header {
@@ -31,7 +33,7 @@
   
   .desktopNav a {
     text-decoration: none;
-    color: #000;
+    color: #000c19;
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s;
@@ -60,7 +62,7 @@
   .mobileMenuButton div {
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: #000c19;
     margin: 3px 0;
   }
   
@@ -87,7 +89,7 @@
   
   .mobileNav a {
     text-decoration: none;
-    color: #000;
+    color: #000c19;
     font-weight: 600;
     font-size: 16px;
   }
@@ -140,7 +142,7 @@
     font-size: 32px;
     line-height: 1;
     font-weight: 700;
-    border-bottom: 5px solid #e5ff1a;
+    border-bottom: 5px solid #80bdff;
   }
   
   .andText {
@@ -158,7 +160,7 @@
     position: relative;
     width: 150px;
     height: 150px;
-    background-color: #e5ff1a;
+    background-color: #80bdff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -172,20 +174,6 @@
     font-size: 24px;
   }
   
-  .scrollDown {
-    position: absolute;
-    left: 0;
-    bottom: 100px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
   .agencyDescription {
     max-width: 500px;
     margin-top: auto;
@@ -196,7 +184,7 @@
     font-size: 18px;
     line-height: 1.6;
     font-weight: 500;
-    color: #444;
+    color: #000c19;
   }
   
   .heroImages {
@@ -220,7 +208,7 @@
     height: 300px;
     border-radius: 100px;
     overflow: hidden;
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(128, 189, 255, 0.3);
   }
   
   .centerCircle {
