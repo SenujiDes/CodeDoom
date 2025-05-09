@@ -279,6 +279,7 @@
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
     z-index: 1;
     transition: transform 0.5s ease;
+    margin-top: 80px;
   }
   
   .redOverlay:hover {
@@ -297,6 +298,7 @@
     z-index: 1;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
+    margin-top: -80px;
   }
   
   .rightImage:hover {
@@ -348,14 +350,16 @@
     top: 120px;
     right: 50px;
     text-align: right;
+   
   }
+
   
   .buildingText h2 {
     margin: 0;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    transition: color 0.3s ease;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -40px;
+    line-height: 1.1; 
   }
   
   .buildingText h2:hover {
@@ -369,7 +373,7 @@
     }
     
     .developmentCircle {
-      right: 50px;
+      right: 60px;
     }
   }
   
@@ -380,8 +384,8 @@
     }
     
     .circleWrapper {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
     }
     
     .circleText {
@@ -391,53 +395,77 @@
   
   @media (max-width: 992px) {
     .header {
-      padding: 15px 30px;
+      padding: 15px 20px;
     }
-    
+
+    .desktopNav {
+      display: none;
+    }
+
+    .mobileMenuButton {
+      display: flex;
+    }
+
+    .mobileNav {
+      display: block;
+    }
+
     .heroSection {
       flex-direction: column;
-      margin: 0 30px;
+      margin: 0 20px;
+      padding-top: 20px;
     }
-    
+
     .heroContent {
-      margin-bottom: 200px;
+      margin-bottom: 50px;
     }
-    
-    .heroImages {
-      height: 400px;
-      margin-top: 100px;
+
+    .heroText {
+      padding-top: 30px;
     }
-    
-    .redOverlay {
-      top: 0;
-      right: calc(50% - 25px);
-      width: 250px;
-      height: 250px;
+
+    .heroTop, .heroMiddle, .andText {
+      font-size: 48px;
     }
-    
-    .rightImage {
-      top: 0;
-      left: calc(50% - 25px);
-      width: 250px;
-      height: 250px;
+
+    .webDesignBox {
+      font-size: 24px;
+      margin-top: 10px;
     }
-    
+
     .developmentCircle {
-      bottom: -150px;
-      right: 50px;
+      bottom: -60px;
+      right: 20px;
     }
-    
+
+    .circleWrapper {
+      width: 120px;
+      height: 120px;
+    }
+
+    .agencyDescription {
+      padding-bottom: 30px;
+      max-width: 100%;
+    }
+
+    .heroImages {
+      height: 500px;
+    }
+
+    .redOverlay {
+      width: 250px;
+      height: 350px;
+      right: 52%;
+    }
+
+    .rightImage {
+      width: 250px;
+      height: 350px;
+      left: 52%;
+    }
+
     .buildingSection {
-      position: relative;
-      top: auto;
-      right: auto;
-      text-align: left;
-      margin: 50px 0 0 50px;
-    }
-    
-    .watchButton {
-      bottom: 50px;
-      right: 30px;
+      display: none;
     }
   }
   
@@ -510,64 +538,49 @@
   }
   
   @media (max-width: 576px) {
-    .heroContent {
-      margin-bottom: 150px;
+    .heroTop, .heroMiddle, .andText {
+      font-size: 36px;
     }
-    
-    .heroImages {
-      height: 300px;
-    }
-    
+
     .webDesignBox {
-      margin-right: 10px;
-      padding: 8px;
-      border-bottom-width: 3px;
+      font-size: 20px;
     }
-    
-    .developmentCircle {
-      bottom: -100px;
-      right: 10px;
+
+    .heroImages {
+      height: 400px;
     }
-    
-    .circleWrapper {
+
+    .redOverlay {
+      width: 180px;
+      height: 280px;
+      right: 51%;
+    }
+
+    .rightImage {
+      width: 180px;
+      height: 280px;
+      left: 51%;
+    }
+
+    .watchButton {
       width: 80px;
       height: 80px;
-    }
-    
-    .circleText {
-      font-size: 14px;
-    }
-    
-    .redOverlay {
-      width: 150px;
-      height: 150px;
-      right: calc(50% - 15px);
-    }
-    
-    .rightImage {
-      width: 150px;
-      height: 150px;
-      left: calc(50% - 15px);
-    }
-    
-    .watchButton {
-      width: 70px;
-      height: 70px;
       bottom: 20px;
-      right: 10px;
+      right: 20px;
     }
-    
-    .playIcon svg {
-      width: 20px;
-      height: 20px;
+
+    .circleWrapper {
+      width: 100px;
+      height: 100px;
     }
-    
-    .watchButton span {
-      font-size: 10px;
+
+    .circleText {
+      font-size: 16px;
     }
-    
+
     .agencyDescription p {
       font-size: 16px;
+      line-height: 1.5;
     }
   }
   
