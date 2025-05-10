@@ -68,9 +68,9 @@ export default function Home() {
                 </div>
               </h1>
               
-              <div className="absolute -bottom-[50px] right-[100px] z-[5]">
+              <div className="absolute -bottom-[-180px] right-[90px] z-[5]">
                 <div className="relative w-[150px] h-[150px] bg-[#80bdff] rounded-full flex items-center justify-center shadow-[0_5px_15px_rgba(128,189,255,0.5)] transition-transform duration-300 hover:scale-105">
-                  <div className="-rotate-90 font-bold lowercase text-[24px] text-white">
+                  <div className="-rotate-90 font-bold lowercase text-[23px] text-white">
                     <span>development</span>
                   </div>
                 </div>
