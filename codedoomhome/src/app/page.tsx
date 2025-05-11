@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   // Scroll effect for header
   useEffect(() => {
@@ -18,8 +18,8 @@ export default function Home() {
 
   // Close mobile menu when clicking outside
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (menuRef.current && !menuRef.current.contains(e.target) && isOpen) {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node) && isOpen) {
         setIsOpen(false);
       }
     };
@@ -36,13 +36,7 @@ export default function Home() {
     { name: 'SHOP', hasDropdown: false },
   ];
 
-  const socialIcons = [
-    { name: 'facebook', icon: 'fab fa-facebook-f' },
-    { name: 'twitter', icon: 'fab fa-twitter' },
-    { name: 'instagram', icon: 'fab fa-instagram' },
-    { name: 'linkedin', icon: 'fab fa-linkedin-in' },
-  ];
-
+ 
   return (
     <div className="max-w-full overflow-hidden font-montserrat bg-white text-[#000c19]">
       <Head>
@@ -190,20 +184,7 @@ export default function Home() {
                 </motion.li>
               ))}
             </ul>
-            <div className="flex justify-center gap-5 pb-10">
-              {socialIcons.map((s, i) => (
-                <motion.a
-                  key={s.name}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-[#80bdff] hover:text-white transition-all duration-300"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 20 }}
-                  transition={{ duration: 0.3, delay: isOpen ? 0.3 + i * 0.1 : 0 }}
-                >
-                  <i className={s.icon}></i>
-                </motion.a>
-              ))}
-            </div>
+            
           </nav>
         </div>
       </header>
